@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #161c2d;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container .game-title{
+    color: white;
+    padding: 15px;
+}
+.container .game-title .turn-title{
+    font-family: cursive;
+    font-size: 15px;
+}
+.container .game-title .turn-title .turn{
+    font-size: larger;
+    color: aqua;
+}
+.game {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    color: white;
+}
+.game .square{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 78px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+}
+.game .one{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+.game .two{
+    border-bottom: 1px solid;
+}
+.game .three{
+    border-right: 1px solid;
+}
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 17px;
+    color: white;
+    background: rebeccapurple;
+    cursor: pointer;
+}
+.over-lay{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #0e0e1fb8;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+.over-lay .title{
+    font-family: cursive;
+    font-size: 26px;
+}
